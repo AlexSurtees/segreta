@@ -3,16 +3,17 @@ import { GameService } from 'src/services/game.service';
 import { coordinates } from 'src/services/coordinates';
 import { Piece } from 'src/types/Piece';
 import { Coords } from 'src/types/Coords';
+import { IGameService } from 'src/services/interfaces/i-game.service';
 
 @Component({
   selector: 'app-board',
   templateUrl: './board.component.html',
-  styleUrls: ['./board.component.css']
+  styleUrls: ['./board.component.css'],
 })
 export class BoardComponent {
   coordinates = coordinates;
 
-  constructor(private _GameService: GameService) { }
+  constructor(private _GameService: IGameService) { }
 
   ngOnInit() {
     this._GameService.initPuzzle()

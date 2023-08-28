@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
 import { FenReaderService } from './fen-reader.service';
 import { mockGameAPIService} from './game-api.service';
-import { PiecesService } from './pieces.service';
 import { GameWinner } from 'src/types/GameWinner';
 import { Coords } from 'src/types/Coords';
+import { IGameService } from './interfaces/i-game.service';
+import { PiecesService } from './pieces.service';
 
 @Injectable({
   providedIn: 'root'
 })
-export class GameService {
+export class GameService implements IGameService {
 
   private _result: GameWinner = GameWinner.white;
   private _guessSubmitted: boolean = false;
