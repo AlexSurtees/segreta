@@ -1,0 +1,12 @@
+<div class="container aspect-square w-3/6 grid grid-cols-8" [ngClass]="getBoardBorderColour()">
+    <div *ngFor="let y of coordinates.files" class="grid grid-rows-8">
+        <div *ngFor="let x of coordinates.ranks" [ngClass]="getSquareColour({file: y, rank: x})">
+            <app-square
+            [pieceClass]="getPieceClass({file: y, rank: x})"
+            [coord]="{file: y, rank: x}"
+            (clickCoordinates)="revealPiece($event)"
+            >
+        </app-square>
+        </div>
+    </div>
+</div>

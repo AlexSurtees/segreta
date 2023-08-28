@@ -1,0 +1,1 @@
+export type Role = 'k' | 'q' | 'p' | 'n' | 'r' | 'b'

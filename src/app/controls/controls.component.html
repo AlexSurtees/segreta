@@ -1,0 +1,7 @@
+<div class="w-full" *ngIf="getGuessSubmitted()">
+    <button class="w-3/12 m-1 border-2" (click)="handleNextPuzzle()"> Next Puzzle! </button>
+</div>
+<div class="w-full" *ngIf="!getGuessSubmitted()">
+    <button value="white" class="w-3/12 m-1 border-2" (click)="handleGuessSubmitted($event)"> White Win </button>
+    <button value="black" class="w-3/12 m-1 border-2" (click)="handleGuessSubmitted($event)"> Black Win </button>
+</div>

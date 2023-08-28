@@ -1,0 +1,55 @@
+.p.white {
+    background-image: url('../../images/wP.svg')
+  }
+  
+  .n.white {
+    background-image: url('../../images/wN.svg')
+  }
+  
+  .b.white {
+    background-image: url('../../images/wB.svg')
+  }
+  
+  .r.white {
+    background-image: url('../../images/wR.svg')
+  }
+  
+  .q.white {
+    background-image: url('../../images/wQ.svg')
+  }
+  
+  .k.white {
+    background-image: url('../../images/wK.svg')
+  }
+  
+  .p.black {
+    background-image: url('../../images/bP.svg')
+  }
+  
+  .n.black {
+    background-image: url('../../images/bN.svg')
+  }
+  
+  .b.black {
+    background-image: url('../../images/bB.svg')
+  }
+  
+  .r.black {
+    background-image: url('../../images/bR.svg')
+  }
+  
+  .q.black {
+    background-image: url('../../images/bQ.svg')
+  }
+  
+  .k.black {
+    background-image: url('../../images/bK.svg')
+  }
+  
+  .a.black {
+    background-image: url('../../images/bA.svg');
+  }
+  
+  .a.white {
+    background-image: url('../../images/wA.svg');
+  }
