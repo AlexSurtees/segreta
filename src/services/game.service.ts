@@ -3,6 +3,7 @@ import { FenReaderService } from './fen-reader.service';
 import { mockGameAPIService} from './game-api.service';
 import { PiecesService } from './board.service';
 import { GameWinner } from 'src/types/GameWinner';
+import { Coords } from 'src/types/Coords';
 
 @Injectable({
   providedIn: 'root'
@@ -56,6 +57,10 @@ export class GameService {
 
   getScore(): boolean[] {
     return this._scoreRecord;
+  }
+
+  setAnonymous(coords: Coords, value: boolean): void {
+    this.getBoard().getPiece(coords).setAnonymous(value)
   }
 
 }
