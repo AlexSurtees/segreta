@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GameService } from 'src/services/game.service';
+import { IGameService } from 'src/services/interfaces/i-game.service';
 
 @Component({
   selector: 'app-score-pills',
@@ -8,7 +8,7 @@ import { GameService } from 'src/services/game.service';
 })
 export class ScorePillsComponent {
 
-  constructor(private _gameService: GameService) {}
+  constructor(private _gameService: IGameService) {}
 
   getScore(): boolean[] {
     return this._gameService.getScore();

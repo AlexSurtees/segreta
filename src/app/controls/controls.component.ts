@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GameService } from 'src/services/game.service';
+import { IGameService } from 'src/services/interfaces/i-game.service';
 import { GameWinner } from 'src/types/GameWinner';
 
 @Component({
@@ -9,7 +9,7 @@ import { GameWinner } from 'src/types/GameWinner';
 })
 export class ControlsComponent {
 
-  constructor(private _GameService: GameService) {}
+  constructor(private _GameService: IGameService) {}
 
   getGuessSubmitted(): boolean {
     return this._GameService.getGuessSubmitted()

@@ -6,9 +6,7 @@ import { Coords } from 'src/types/Coords';
 import { IGameService } from './interfaces/i-game.service';
 import { PiecesService } from './pieces.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GameService implements IGameService {
 
   private _result: GameWinner = GameWinner.white;
