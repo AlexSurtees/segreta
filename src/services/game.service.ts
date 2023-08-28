@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FenReaderService } from './fen-reader.service';
 import { mockGameAPIService} from './game-api.service';
-import { PiecesService } from './board.service';
+import { PiecesService } from './pieces.service';
 import { GameWinner } from 'src/types/GameWinner';
 import { Coords } from 'src/types/Coords';
 
