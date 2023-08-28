@@ -43,7 +43,7 @@ export class BoardComponent {
     return ''
   }
 
-  revealPiece(event: { coords: Coords, mouseEvent: MouseEvent }) {
+  revealPiece(event: {coords: Coords, mouseEvent: MouseEvent }) {
     this._GameService.getBoard().getPiece(event.coords).setAnonymous(false)
   }
 }

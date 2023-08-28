@@ -6,7 +6,6 @@ import { BoardComponent } from './board/board.component';
 import { SquareComponent } from './square/square.component';
 import { ControlsComponent } from './controls/controls.component';
 import { ScorePillsComponent } from './score-pills/score-pills.component';
-import { IGameComponent } from './i-game/i-game.component';
 
 @NgModule({
   declarations: [
@@ -14,8 +13,7 @@ import { IGameComponent } from './i-game/i-game.component';
     BoardComponent,
     SquareComponent,
     ControlsComponent,
-    ScorePillsComponent,
-    IGameComponent
+    ScorePillsComponent
   ],
   imports: [
     BrowserModule
