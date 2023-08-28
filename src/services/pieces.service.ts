@@ -3,9 +3,7 @@ import { Piece } from 'src/types/Piece';
 import { Coords } from 'src/types/Coords';
 import { IPiecesService } from './interfaces/i-pieces.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class PiecesService implements IPiecesService {
 
   private _pieces: Piece[][] = [];

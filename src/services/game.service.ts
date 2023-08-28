@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { FenReaderService } from './fen-reader.service';
-import { mockGameAPIService} from './game-api.service';
 import { GameWinner } from 'src/types/GameWinner';
 import { Coords } from 'src/types/Coords';
 import { IGameService } from './interfaces/i-game.service';
-import { PiecesService } from './pieces.service';
+import { IPiecesService } from './interfaces/i-pieces.service';
+import { IGameApiService } from './interfaces/i-game-api.service';
+import { IReaderService } from './interfaces/i-reader.service';
 
 @Injectable()
 export class GameService implements IGameService {
@@ -15,9 +15,9 @@ export class GameService implements IGameService {
   private _scoreRecord: boolean[] = [];
 
   constructor(
-    private _reader: FenReaderService,
-    private _gameAPI: mockGameAPIService,
-    private _pieces: PiecesService
+    private _reader: IReaderService,
+    private _gameAPI: IGameApiService,
+    private _pieces: IPiecesService
   ) {}
 
   //Fire and forget/wait for completion before proceeding
@@ -46,7 +46,7 @@ export class GameService implements IGameService {
     this._pieces.revealPieces();
   }
 
-  getBoard(): PiecesService {
+  getBoard(): IPiecesService {
     return this._pieces
   }
 

@@ -5,7 +5,6 @@ import { Piece } from 'src/types/Piece';
   providedIn: 'root'
 })
 export abstract class IPiecesService {
-
   abstract getPiece(coords: Coords): Piece
   abstract revealPieces(): void 
   abstract setPieces(pieces: Piece[][]): void

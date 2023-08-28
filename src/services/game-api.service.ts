@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable, of} from 'rxjs';
 import { GameWinner } from 'src/types/GameWinner';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class mockGameAPIService {
     getGame(): Observable<{fen: string, result: GameWinner}> {
         return of({

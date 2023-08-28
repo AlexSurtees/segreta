@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
+import { Piece } from 'src/types/Piece';
 
 @Injectable({
   providedIn: 'root'
 })
-export class IReaderService {
-
-  constructor() { }
+export abstract class IReaderService {
+  abstract read(data: any): Piece[][]
 }

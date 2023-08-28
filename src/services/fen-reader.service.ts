@@ -3,9 +3,7 @@ import { Piece } from "src/types/Piece";
 import { Role } from "src/types/Role";
 import { coordinates } from "src/services/coordinates";
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class FenReaderService {
 
     public read(fen: string): Piece[][] {
